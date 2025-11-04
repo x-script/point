@@ -12,7 +12,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    ElContainer: typeof import('element-plus/es')['ElContainer']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElSelect: typeof import('element-plus/es')['ElSelect']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -22,7 +21,6 @@ declare module 'vue' {
 
 // For TSX support
 declare global {
-  const ElContainer: typeof import('element-plus/es')['ElContainer']
   const ElOption: typeof import('element-plus/es')['ElOption']
   const ElSelect: typeof import('element-plus/es')['ElSelect']
   const RouterLink: typeof import('vue-router')['RouterLink']
