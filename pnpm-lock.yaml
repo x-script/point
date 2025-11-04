@@ -11,6 +11,9 @@ importers:
       '@amap/amap-jsapi-loader':
         specifier: ^1.0.1
         version: 1.0.1
+      '@amap/amap-jsapi-types':
+        specifier: ^0.0.15
+        version: 0.0.15
       element-plus:
         specifier: ^2.11.7
         version: 2.11.7(vue@3.5.22(typescript@5.9.3))
@@ -83,6 +86,9 @@ packages:
 
   '@amap/amap-jsapi-loader@1.0.1':
     resolution: {integrity: sha512-nPyLKt7Ow/ThHLkSvn2etQlUzqxmTVgK7bIgwdBRTg2HK5668oN7xVxkaiRe3YZEzGzfV2XgH5Jmu2T73ljejw==}
+
+  '@amap/amap-jsapi-types@0.0.15':
+    resolution: {integrity: sha512-oqyRqHpVDZh5bUe2mAJh41ZsziSj0eUzwcfIbiaBNB0eiTJnZNhKsTdk77VOklOjwuwNfsblpKW9LjmWNpeQ7A==}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -1795,6 +1801,8 @@ packages:
 snapshots:
 
   '@amap/amap-jsapi-loader@1.0.1': {}
+
+  '@amap/amap-jsapi-types@0.0.15': {}
 
   '@babel/code-frame@7.27.1':
     dependencies:

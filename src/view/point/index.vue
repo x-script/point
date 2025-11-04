@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref, reactive } from 'vue'
 import AMapLoader from '@amap/amap-jsapi-loader'
-import { id } from 'element-plus/es/locales.mjs'
+// import type { Map } from '@amap/amap-jsapi-types'
 
 type Option = {
   areaId: number
@@ -12,9 +12,9 @@ type Option = {
 
 const value = ref<Option>()
 // let zz = [116.166215, 40.525038]
-let gr = reactive()
+// let gr = reactive()
 
-let map = null
+let map: any = null
 
 var communityData = [
   {
@@ -128,7 +128,7 @@ onUnmounted(() => {
   map?.destroy()
 })
 
-let handleSelect = (val) => {
+let handleSelect = (val: any) => {
   map.setCenter(val.position, true)
 }
 
@@ -159,13 +159,5 @@ const options = ref(communityData)
   top: 20px;
   left: 20px;
   z-index: 999;
-}
-
-/* 在全局样式中添加 */
-.amap-copyright {
-  display: none !important;
-}
-.amap-logo {
-  display: none !important; /* 兜底隐藏 Logo */
 }
 </style>
