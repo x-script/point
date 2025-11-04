@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
-    "@amap/amap-jsapi-types": "^0.0.15",
     "element-plus": "^2.11.7",
     "pinia": "^3.0.3",
     "vue": "^3.5.22",
