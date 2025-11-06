@@ -9,8 +9,6 @@ interface RouteMeta {
   component: any
 }
 
-import Home from '@/view/point/index.vue'
-
 // console.log(Object.entries(pages))
 const routes = Object.entries(pages).flatMap(([path, meta]) => {
   // console.log(meta)
@@ -25,7 +23,7 @@ const router = createRouter({
     {
       // name: 'Point',
       path: '/',
-      component: Home,
+      component: () => import('@/view/point/index.vue'),
     },
   ],
 })
