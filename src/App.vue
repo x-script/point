@@ -3,7 +3,8 @@
 <template>
   <div class="">
     321321
-    <RouterView />
+    <!-- <RouterLink to="/">Go to login</RouterLink> -->
+    <router-view></router-view>
   </div>
 </template>
 
