@@ -137,10 +137,11 @@ const options = ref(communityData)
 
 <template>
   <div class="container">
-    <el-select @change="handleSelect" v-model="value" placeholder="Select" class="select" style="width: 240px">
+    444444444444444
+    <!-- <el-select @change="handleSelect" v-model="value" placeholder="Select" class="select" style="width: 240px">
       <el-option v-for="(item, index) in options" :key="index" :label="item.name" :value="item" />
     </el-select>
-    <div id="container" />
+    <div id="container" /> -->
   </div>
 </template>
 

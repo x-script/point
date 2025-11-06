@@ -3,7 +3,7 @@
 <template>
   <div class="">
     321321
-    <router-view />
+    <RouterView />
   </div>
 </template>
 

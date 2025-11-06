@@ -14,7 +14,7 @@ const routes = Object.entries(pages).flatMap(([path, meta]) => {
   // console.log(meta)
   return meta as RouteMeta[]
 })
-// console.log(routes)
+console.log('routes ==>', import.meta.env.BASE_URL)
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
