@@ -18,14 +18,14 @@ const routes = Object.entries(pages).flatMap(([path, meta]) => {
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
-  // routes: [
-  //   {
-  //     name: 'Point',
-  //     path: '/',
-  //     component: () => import('@/view/point/index.vue'),
-  //   },
-  // ],
+  // routes,
+  routes: [
+    {
+      name: 'Point',
+      path: '/',
+      component: () => import('@/view/point/index.vue'),
+    },
+  ],
 })
 
 export default router
