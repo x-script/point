@@ -136,7 +136,6 @@ const options = ref(communityData)
 
 <template>
   <div class="container">
-    444444444444444
     <el-select @change="handleSelect" v-model="value" placeholder="Select" class="select" style="width: 240px">
       <el-option v-for="(item, index) in options" :key="index" :label="item.name" :value="item" />
     </el-select>
@@ -159,5 +158,10 @@ const options = ref(communityData)
   top: 20px;
   left: 20px;
   z-index: 999;
+}
+
+.amap-logo,
+.amap-copyright {
+  display: none !important;
 }
 </style>

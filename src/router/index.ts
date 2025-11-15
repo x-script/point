@@ -1,32 +1,32 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-// const pages = import.meta.glob('../view/pages.ts', { eager: true, import: 'default' })
+const pages = import.meta.glob('../view/pages.ts', { eager: true, import: 'default' })
 // console.log(pages)
 
-// interface RouteMeta {
-//   name?: string
-//   path: string
-//   component: any
-// }
+interface RouteMeta {
+  name?: string
+  path: string
+  component: any
+}
 
 // console.log(Object.entries(pages))
-// const routes = Object.entries(pages).flatMap(([path, meta]) => {
-//   // console.log(meta)
-//   return meta as RouteMeta[]
-// })
+const routes = Object.entries(pages).flatMap(([path, meta]) => {
+  // console.log(meta)
+  return meta as RouteMeta[]
+})
 
 console.log('routes ==>', import.meta.env.BASE_URL)
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
-  // routes,
-  routes: [
-    {
-      // name: 'Point',
-      path: '/',
-      component: () => import('@/view/Point/index.vue'),
-    },
-  ],
+  routes,
+  // routes: [
+  //   {
+  //     // name: 'Point',
+  //     path: '/',
+  //     component: () => import('@/view/Point/index.vue'),
+  //   },
+  // ],
 })
 
 export default router

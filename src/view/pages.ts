@@ -1,7 +1,7 @@
-// export default [
-//   {
-//     // name: 'Point',
-//     path: '/',
-//     component: () => import('@/view/Point/index.vue'),
-//   },
-// ]
+export default [
+  {
+    // name: 'Point',
+    path: '/',
+    component: () => import('@/view/Point/index.vue'),
+  },
+]
